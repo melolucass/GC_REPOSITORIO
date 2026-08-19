@@ -1,0 +1,12 @@
+{
+  "name": "gc_repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "git-config": "bash scripts/git-config.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
