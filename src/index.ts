@@ -8,6 +8,6 @@ const env = getEnv()
 
 app.use(router)
 app.listen(env.PORT, () => {
-    console.log(`Server running on port ${PORT}`)
+    console.log(`Server running on port ${3333}`)
 })
 

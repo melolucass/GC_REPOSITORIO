@@ -1,9 +1,10 @@
 import {Router} from "express"
+import noteRouter from "../resources/note/note.router.js"
+
 
 const router = Router()
 
-    router.get("/",(req,res) => {
-        res.send("hello")
-    })
-    export default router
+router.use("/notes", noteRouter)
+
+export default router
     
