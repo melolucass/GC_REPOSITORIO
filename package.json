@@ -6,7 +6,8 @@
   "scripts": {
     "git-config": "bash scripts/git-config.sh",
     "start": "tsx watch src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",

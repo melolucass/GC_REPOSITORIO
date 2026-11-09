@@ -4,7 +4,7 @@ dotenv.config({ quiet:true })
 export function getEnv() {
     return cleanEnv(process.env, {
         PORT: port({default: 4444}),
-        NODE_ENV: str({ default: "development", choices: ["development", "production", "test"]}),
+        NODE_ENV: str({ default: "development", choices: ["development", "production", "tests"]}),
         DATABASE_URL: url(),
     })
 }

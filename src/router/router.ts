@@ -6,5 +6,9 @@ const router = Router()
 
 router.use("/notes", noteRouter)
 
+router.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" })
+})
+
 export default router
     

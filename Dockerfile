@@ -19,3 +19,13 @@ COPY package*.json .
 RUN npm ci
 EXPOSE 3333
 CMD ["npm", "start"]
+FROM node:24-alpine3.23 AS tests
+WORKDIR /app
+COPY package*.json .
+RUN npm ci
+ENV NODE_ENV=tests
+COPY . .
+RUN npx prisma generate
+EXPOSE 3333
+CMD ["npm", "start"]
+
