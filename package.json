@@ -6,8 +6,8 @@
   "scripts": {
     "git-config": "bash scripts/git-config.sh",
     "start": "tsx watch src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest --run"
   },
   "keywords": [],
   "author": "",
@@ -26,13 +26,16 @@
     "@eslint/js": "^10.0.1",
     "@types/express": "^5.0.6",
     "@types/node": "^26.2.0",
+    "@vitest/coverage-v8": "^5.1.0",
+    "@vitest/ui": "^5.1.0",
     "eslint": "^10.9.1",
     "globals": "^17.11.0",
     "prettier": "^3.9.6",
     "prisma": "^7.10.1",
     "tsx": "^4.23.12",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.68.0"
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^5.1.0"
   },
   "allowScripts": {
     "esbuild@0.28.2": true
