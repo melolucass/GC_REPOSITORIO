@@ -1,0 +1,15 @@
+name: Testes de contextos
+on:
+  workflow_dispatch:
+jobs:
+  print-context:
+    runs-on: ubuntu-latest
+    env: 
+      TESTE: 12345
+    steps:
+      - name: Print some data
+        run: |
+          echo "${{toJson(github)}}"
+          echo "${{toJson(job)}}"
+          echo "${{toJson(steps)}}"
+          echo "${{toJson(env)}}"
