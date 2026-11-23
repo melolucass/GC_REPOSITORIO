@@ -11,4 +11,9 @@ export const getNotes = async () => {
     return prisma.note.findMany()
 }
 
-export const createNote = () => {}
+export const createNote = async (data: CreateNoteD) => {
+    return prisma.note.create({ data })
+}
+
+export const getNote = async(id: string) => {
+    return prisma.note.findFirst({ where: { id } })}
